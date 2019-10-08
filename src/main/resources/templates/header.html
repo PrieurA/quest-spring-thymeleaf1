@@ -7,11 +7,11 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header th:replace="header :: top"></header>
-<section>
-    <h1 th:text="|Welcome ${doctorname}|">Welcome $doctorname</h1>
-    <h3 th:text="|Your number is ${doctornumber}|">Your number is $doctornumber</h3>
-</section>
-<footer th:replace="footer :: bottom"></footer>
+<header th:fragment="top">
+    <nav>
+        <span>Doctor Secret Service</span>
+        <a href="/">Sign In</a>
+    </nav>
+</header>
 </body>
 </html>
